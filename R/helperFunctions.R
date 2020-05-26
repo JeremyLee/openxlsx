@@ -381,6 +381,7 @@ replaceXMLEntities <- function(v) {
   v <- gsub("&apos;", "'", v, fixed = TRUE)
   v <- gsub("&lt;", "<", v, fixed = TRUE)
   v <- gsub("&gt;", ">", v, fixed = TRUE)
+  v <- gsub("&#x92;", "’", v, fixed = TRUE)
 
   return(v)
 }
